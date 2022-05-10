@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Imposto logo e link */
@@ -20,6 +21,7 @@ header{
 }
 
 .top-head .content{
+    font-size: 15px;
     max-width: 900px;
     margin: 0px auto;
     display: flex;
@@ -63,6 +65,11 @@ li{
 .jumbotron .content{
     width: 900px;
     height: 250px;
+}
+
+.content{
+    margin-top: 100px;
+    text-align: center;
 }
 
 .section-container{

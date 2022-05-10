@@ -1,0 +1,154 @@
+/* Imposto parametri */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Imposto logo e link */
+
+header{
+    color: white;
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
+    height: 700px;
+}
+
+.top-head{
+    padding: 10px;
+}
+
+.top-head .content{
+    max-width: 900px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-column{
+    width: 20%;
+}
+
+.menu-column{
+    width: 60%;
+}
+
+.menu-column ul{
+    justify-content: center;
+    display: flex;
+}
+
+.menu-column ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+
+.login-column{
+    width: 25%;
+}
+
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.jumbotron .content{
+    width: 900px;
+    height: 250px;
+}
+
+.section-container{
+    max-width: 900px;
+    margin: 0px auto;
+    display: flex;
+    padding: 20px;
+}
+
+.big-column{
+    width: 60%;
+    height: 350px;
+}
+
+.big-column.frog{
+    background-image: url(./img/item1.svg);
+    background-size: 100%;
+}
+
+.big-column.wizard{
+    background-image: url(./img/item2.svg);
+    background-size: 100%;
+}
+
+.big-column.notes{
+    background-image: url(./img/item3.svg);
+    background-size: 100%;
+}
+
+.small-column{
+    width: 40%;
+    height: 350px;
+}
+
+.main{
+    flex-grow: 2;
+    height: 350px;
+}
+
+.big-box{
+    height: 550px;
+    width: 1000px;
+}
+
+.big-box.calling{
+    background-image: url(./img/item4-big.svg);
+    background-size: auto;
+}
+
+
+.item{
+    flex-grow: 1;
+    height: 350px;
+}
+
+
+footer{
+    background-color: rgb(32, 35, 37);
+    color: white;
+}
+
+.fix{
+}
+
+hr{
+    color: lightgray;
+}
+
+.bottom{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-content{
+    width: 900px;
+    display: flex;
+    justify-content: space-between
+}
+
+
+.button{
+}
+
+.left{
+}
+
+.right{
+}

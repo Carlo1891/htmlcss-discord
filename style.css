@@ -1,161 +1,179 @@
-/* Imposto parametri */
+/* Imposto parametri e elementi comuni */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Imposto logo e link */
+li {
+    list-style: none;
+}
 
-header{
+.section-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
     color: white;
-    background-image: url(./img/jumbo.png);
-    background-size: cover;
-    height: 700px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #7289DA;
+    margin: 10px;
 }
 
-.top-head{
-    padding: 10px;
+.btn.btn-small {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: whitesmoke;
+    color: black;
 }
 
-.top-head .content{
-    font-size: 15px;
-    max-width: 900px;
-    margin: 0px auto;
+.btn.btn-big {
+    padding: 15px 20px;
+    font-size: 14px;
+    background-color: black;
+}
+
+.wave {
+    height: 100px;
+    background-image: url(./img/wave.svg);
+    filter: opacity(0.04);
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* Imposto logo e prefazione */
+
+.top-bar {
+    padding: 20px;
+    background-color: #245ee9;
+}
+
+.top-bar .content {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo-column{
+.top-bar .login-column {
     width: 20%;
 }
 
-.menu-column{
+.top-bar .logo-column img {
+    width: 80%;
+}
+
+.top-bar .menu-column {
     width: 60%;
 }
 
-.menu-column ul{
+.menu-column ul {
     justify-content: center;
     display: flex;
 }
 
-.menu-column ul li a{
+.menu-column ul li a {
     text-decoration: none;
+    color: white;
     padding: 5px 10px;
     display: inline-block;
 }
 
-li{
-    list-style: none;
+/* .menu-column ul li a:hover */
+
+.login-column {
+    width: 20%;
+    text-align: right;
 }
 
-.login-column{
-    width: 25%;
-}
-
-.jumbotron{
+.jumbotron {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 200px;
     align-items: center;
+    background-image: url(./img/jumbo.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.jumbotron .content{
-    width: 900px;
-    height: 250px;
-}
-
-.content{
-    margin-top: 100px;
+.jumbotron .content {
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.section-container{
-    max-width: 900px;
-    margin: 0px auto;
-    display: flex;
+h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.top-bar .content > p {
+    color: white;
+    line-height: 30px;
+}
+
+/* Imposto corpo e colonne */
+
+section {
     padding: 20px;
 }
 
-.big-column{
+.section-container {
+    display: flex;
+}
+
+.section-container-behind {
+    background-color: rgb(245, 245, 245);
+}
+
+.big-column {
     width: 60%;
-    height: 350px;
 }
 
-.big-column.frog{
-    background-image: url(./img/item1.svg);
-    background-size: 100%;
-}
-
-.big-column.wizard{
-    background-image: url(./img/item2.svg);
-    background-size: 100%;
-}
-
-.big-column.notes{
-    background-image: url(./img/item3.svg);
-    background-size: 100%;
-}
-
-.small-column{
+.small-column {
     width: 40%;
-    height: 350px;
 }
 
-.main{
-    flex-grow: 2;
-    height: 350px;
-}
+/* Form e fine pagina */
 
-.big-box{
-    height: 550px;
-    width: 1000px;
-}
-
-.big-box.calling{
-    background-image: url(./img/item4-big.svg);
-    background-size: auto;
-}
-
-
-.item{
-    flex-grow: 1;
-    height: 350px;
-}
-
-
-footer{
-    background-color: rgb(32, 35, 37);
-    color: white;
-}
-
-.fix{
-}
-
-hr{
-    color: lightgray;
-}
-
-.bottom{
-    padding-top: 10px;
+.footer-top {
+    width: 800px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    padding: 20px 0 20px 0;
 }
 
-.section-content{
-    width: 900px;
+.footer-top .mix-column-lx {
+    flex-basis: 30%;
+    height: 300px;
+}
+
+.footer-top .mix-column-rx {
     display: flex;
-    justify-content: space-between
+    flex-basis: 70%;
+    align-items: stretch;
 }
 
-
-.button{
+.mix-column-single {
+    flex-basis: 25%;
 }
 
-.left{
+.footer-bottom {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
-.right{
+.footer-bottom .logo-column,
+.footer-bottom .button-column {
 }
+
